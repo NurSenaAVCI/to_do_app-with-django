@@ -1,8 +1,9 @@
 <p>Are you sure you want to detele "{{item}}"?</p>
 <a href="{% url "list_page" %}">Cancel</a>
 
-<form method = "POST" >
+<form method = "POST" action="">
     {% csrf_token %}
 
-    <input type="submit" name = "Update Task">
+    <input type="submit" name = "Confirm">
+    
 </form>

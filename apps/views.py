@@ -13,8 +13,6 @@ def index (request):
 
         return redirect('/')
 
-
-
     return render (request, 'htmls/list.html', {
         'tasks' : tasks,
         'form' : form,
